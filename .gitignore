@@ -28,3 +28,6 @@ war/WEB-INF/*.api
 # App engine generated
 war/WEB-INF/appengine-generated/
 endpoint-libs/
+
+# OS specific files
+/.DS_Store
