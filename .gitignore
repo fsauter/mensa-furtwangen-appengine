@@ -21,6 +21,8 @@ hs_err_pid*
 # Caches and things from deploy
 war/WEB-INF/deploy/
 war/WEB-INF/classes/
+war/WEB-INF/lib/
+war/WEB-INF/*.discovery
 
 # App engine generated
 war/WEB-INF/appengine-generated/
