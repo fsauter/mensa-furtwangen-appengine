@@ -20,7 +20,7 @@
 		<servlet-class>com.google.api.server.spi.SystemServiceServlet</servlet-class>
 		<init-param>
 			<param-name>services</param-name>
-			<param-value>de.rentoudu.mensa.ratings.v1.RatingEndpoint,de.rentoudu.mensa.thumbs.v1.ThumpsEndpoint</param-value>
+			<param-value>de.rentoudu.mensa.ratings.v1.RatingEndpoint,de.rentoudu.mensa.thumbs.v1.ThumbsEndpoint</param-value>
 		</init-param>
 	</servlet>
 	<servlet-mapping>

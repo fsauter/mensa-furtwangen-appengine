@@ -1,7 +1,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java"%>
 <%@ page import="java.util.*" %>
 <%@ page import="de.rentoudu.mensa.*" %>
-<%@ page import="de.rentoudu.mensa.model.*" %>
+<%@ page import="de.rentoudu.mensa.ratings.v1.*" %>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
 <%
 	ChartsViewController controller = new ChartsViewController(); 

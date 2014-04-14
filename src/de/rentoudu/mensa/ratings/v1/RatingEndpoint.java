@@ -73,7 +73,7 @@ public class RatingEndpoint {
 			throw new IllegalArgumentException("No menu id given.");
 		} else {
 			
-			Rating rating = ofy().load().type(Rating.class).filter("menuId", menuId).filter("deviceId", deviceId).first().now();
+			Rating rating = ofy().load().type(Rating.class).filter("menuId", menuId).filter("deviceId", deviceId).first().get();
 		
 			if(rating == null) {
 				throw new EntityNotFoundException("No rating found for device " + deviceId + " and menu " + menuId);
@@ -102,7 +102,7 @@ public class RatingEndpoint {
 			throw new IllegalArgumentException("No menu id given.");
 		} else {
 			
-			Rating existingRating = ofy().load().type(Rating.class).filter("menuId", rating.getMenuId()).filter("deviceId", rating.getDeviceId()).first().now();
+			Rating existingRating = ofy().load().type(Rating.class).filter("menuId", rating.getMenuId()).filter("deviceId", rating.getDeviceId()).first().get();
 			
 			if(existingRating == null) {
 				ofy().save().entity(rating).now();
@@ -125,7 +125,7 @@ public class RatingEndpoint {
 	 */
 	@ApiMethod(name = "removeRating", httpMethod = HttpMethod.DELETE)
 	public Rating removeRating(@Named("id") Long id) {
-		Rating storedRating = ofy().load().type(Rating.class).id(id).now();
+		Rating storedRating = ofy().load().type(Rating.class).id(id).get();
 		ofy().delete().entity(storedRating);
 		return storedRating;
 	}
