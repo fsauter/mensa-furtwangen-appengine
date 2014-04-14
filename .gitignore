@@ -23,6 +23,7 @@ war/WEB-INF/deploy/
 war/WEB-INF/classes/
 war/WEB-INF/lib/
 war/WEB-INF/*.discovery
+war/WEB-INF/*.api
 
 # App engine generated
 war/WEB-INF/appengine-generated/
