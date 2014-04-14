@@ -10,3 +10,13 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+
+# AppEngine specific files.
+
+# Caches and things from deploy
+war/WEB-INF/deploy/
+war/WEB-INF/classes/
+
+# App engine generated
+war/WEB-INF/appengine-generated/
+endpoint-libs/
